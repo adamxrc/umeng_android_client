@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeefef"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 1 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="3"
+            android:background="@drawable/chart_back"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/today_new_add"
+                android:orientation="horizontal"
+                android:layout_marginTop="-2dp"
+                android:layout_marginRight="-2dp" >
+
+                <ImageView
+                    android:id="@+id/trend_single_image_type"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/new_users"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#848484"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/text_small" />
+
+                <RelativeLayout
+                    android:id="@+id/trend_view_hidestate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/trend_chose_state" >
+
+                    <TextView
+                        android:id="@+id/text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:textColor="#ffffff"
+                        android:textIsSelectable="true"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" 
+                        android:layout_marginTop="1dp"
+                        />
+                </RelativeLayout>
+				<RelativeLayout
+                    android:id="@+id/trend_view_hidestate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/trend_chose_state"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/compare_text_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:textColor="#ffffff"
+                        android:textIsSelectable="true"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" 
+                        android:layout_marginTop="1dp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="1dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/trend_single_gestrue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:background="@drawable/line_bg"
+                    android:layout_marginBottom="2.5dp"
+                    >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 2 -->
+
+        <LinearLayout
+            android:id="@+id/trend_list_long"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:background="@drawable/corners_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/addapplistview_1"
+                android:layout_width="fill_parent"
+                android:layout_height="23dp"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginRight="-2dp"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/table_title"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/table_title_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/time"
+                    android:textSize="12sp" />
+			<RelativeLayout 
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:layout_marginRight="50dp">
+                <TextView
+                    android:id="@+id/trend_single_listview_title"
+                    style="@style/table_title_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/new_user"
+                    android:textSize="12sp" />			    
+			</RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+				<!--  
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/listback_view"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:dividerHeight="1dp"
+                    android:listSelector="#00000000" />
+                    -->
+				<ListView
+		            android:id="@+id/listView"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:background="@drawable/listback_view"
+		            android:cacheColorHint="#00000000"
+		            android:divider="@null"
+		            android:dividerHeight="0.5dp"
+		            android:scrollingCache="false"
+		            android:listSelector="#00000000" />
+                <TextView
+                    android:id="@+id/space"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textIsSelectable="true" />
+
+                <ImageView
+                    android:id="@+id/choose_time"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_above="@id/space"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/choose_close" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

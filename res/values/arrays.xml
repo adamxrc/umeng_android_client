@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="time_frequency">
+        <item>过去一周</item>
+        <item>过去半月</item>
+        <item>过去一月</item>
+        <item>过去一季</item>
+        <item>过去半年</item>
+        <item>过去一年</item>
+    </string-array>
+    <string-array name="time_axis">
+        <item>00</item>
+        <item>05</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="time_granularity">
+        <item>按&#160;天</item>
+        <item>自然周</item>
+        <item>自然月</item>
+    </string-array>
+    <string-array name="durations_list">
+        <item>单次使用时长</item>
+        <item>单日使用时长</item>
+    </string-array>
+    <string-array name="retention_list">
+        <item>日留存</item>
+        <item>周留存</item>
+        <item>月留存</item>
+    </string-array>
+    <string-array name="event_list">
+        <item>简单事件</item>
+        <item>带标签事件</item>
+        <item>EKV事件</item>
+    </string-array>
+
+</resources>

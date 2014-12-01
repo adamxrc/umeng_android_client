@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+
+    <!-- top -->
+
+
+    <!-- content -->
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeefef"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/todaydata_gesture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeefef"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/today_installations"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/textColor"
+                    android:textIsSelectable="true"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#cccccc" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <!-- content -->
+
+
+                <!-- today new add and launch -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal" >
+
+                    <!-- 1 -->
+
+                    <LinearLayout
+                        android:id="@+id/today_new_add"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/today_new_add_bg"
+                        android:orientation="vertical"
+                        tools:ignore="NestedWeights" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="1dp"
+                                android:paddingLeft="7dp"
+                                android:src="@drawable/icon_today" />
+
+                            <TextView
+                                style="@style/dashboard_item_title"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/today_new_add"
+                                android:textSize="10sp"
+                                tools:ignore="SmallSp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout_new_add"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginTop="3dp" />
+                    </LinearLayout>
+                    <!-- 2 -->
+
+                    <LinearLayout
+                        android:id="@+id/today_launch"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/today_new_add_bg"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="1dp"
+                                android:paddingLeft="7dp"
+                                android:src="@drawable/icon_today" />
+
+                            <TextView
+                                style="@style/dashboard_item_title"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="8dp"
+                                android:text="@string/today_launch"
+                                android:textSize="10sp"
+                                tools:ignore="SmallSp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout_launcher"
+                            android:layout_width="fill_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginTop="3dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- #################### -->
+
+                <LinearLayout
+                    android:id="@+id/today_data_linerlayout_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/product_detail_item_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3.5"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/todaydata_image_3"
+                                style="@style/dashboard_item_chart"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    style="@style/dashboard__item_icon"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/new_users" />
+
+                                <TextView
+                                    style="@style/dashboard_item_title"
+                                    android:text="@string/new_user"
+                                    android:textSize="10sp"
+                                    tools:ignore="SmallSp" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingRight="8dp" >
+
+                                <ImageView
+                                    android:id="@+id/yesterday_image_2"
+                                    style="@style/dashboard_item_icon_day"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/today_mark" />
+
+                                <TextView
+                                    android:id="@+id/todaydata_newuser_text_1"
+                                    style="@style/dashboard_item_number_today"
+                                    android:layout_toLeftOf="@id/yesterday_image_2"
+                                    android:ellipsize="end"
+                                    android:maxLength="10"
+                                    android:singleLine="true"
+                                    android:textIsSelectable="true" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingRight="8dp" >
+
+                                <ImageView
+                                    android:id="@+id/yesterday_image_1"
+                                    style="@style/dashboard_item_icon_day"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/yesterday_mark" />
+
+                                <TextView
+                                    android:id="@+id/yesterdaydata_newuser_text"
+                                    style="@style/dashboard_item_number_yesterday"
+                                    android:layout_toLeftOf="@id/yesterday_image_1"
+                                    android:ellipsize="end"
+                                    android:maxLength="10"
+                                    android:singleLine="true"
+                                    android:textIsSelectable="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- launchs -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="18dp" />
+
+                <!-- active user -->
+
+                <LinearLayout
+                    android:id="@+id/today_data_linerlayout_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/product_detail_item_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3.5"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/todaydata_image_5"
+                                style="@style/dashboard_item_chart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/todaydata_image_4"
+                                    style="@style/dashboard__item_icon"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/active_users" />
+
+                                <TextView
+                                    style="@style/dashboard_item_title"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:text="@string/activity_users"
+                                    android:textSize="10sp"
+                                    tools:ignore="SmallSp" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingRight="8dp" >
+
+                                <ImageView
+                                    android:id="@+id/yesterday_image_4"
+                                    style="@style/dashboard_item_icon_day"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/today_mark" />
+
+                                <TextView
+                                    android:id="@+id/todaydata_activeuser_text"
+                                    style="@style/dashboard_item_number_today"
+                                    android:layout_toLeftOf="@id/yesterday_image_4"
+                                    android:ellipsize="end"
+                                    android:maxLength="10"
+                                    android:singleLine="true"
+                                    android:textIsSelectable="true" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingRight="8dp" >
+
+                                <ImageView
+                                    android:id="@+id/yesterday_image_3"
+                                    style="@style/dashboard_item_icon_day"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/yesterday_mark" />
+
+                                <TextView
+                                    android:id="@+id/yesterdaydata_activeuser_text"
+                                    style="@style/dashboard_item_number_yesterday"
+                                    android:layout_toLeftOf="@id/yesterday_image_3"
+                                    android:ellipsize="end"
+                                    android:maxLength="10"
+                                    android:singleLine="true"
+                                    android:textIsSelectable="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="18dp" />
+
+                <!-- launch -->
+
+                <LinearLayout
+                    android:id="@+id/today_data_linerlayout_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/product_detail_item_bg"
+                    android:clickable="true"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3.5"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/todaydata_image_7"
+                                style="@style/dashboard_item_chart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/todaydata_image_6"
+                                    style="@style/dashboard__item_icon"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/start_times" />
+
+                                <TextView
+                                    style="@style/dashboard_item_title"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:text="@string/launchs"
+                                    android:textSize="10sp"
+                                    tools:ignore="SmallSp" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingRight="8dp" >
+
+                                <ImageView
+                                    android:id="@+id/today_image1"
+                                    style="@style/dashboard_item_icon_day"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/today_mark" />
+
+                                <TextView
+                                    android:id="@+id/todaydata_starttimes_text"
+                                    style="@style/dashboard_item_number_today"
+                                    android:layout_toLeftOf="@id/today_image1"
+                                    android:ellipsize="end"
+                                    android:maxLength="10"
+                                    android:singleLine="true"
+                                    android:textIsSelectable="true" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingRight="8dp" >
+
+                                <ImageView
+                                    android:id="@+id/yesterday_image"
+                                    style="@style/dashboard_item_icon_day"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/yesterday_mark" />
+
+                                <TextView
+                                    android:id="@+id/yesterdaydata_starttimes_text"
+                                    style="@style/dashboard_item_number_yesterday"
+                                    android:layout_toLeftOf="@id/yesterday_image"
+                                    android:ellipsize="end"
+                                    android:maxLength="8"
+                                    android:singleLine="true"
+                                    android:textIsSelectable="false" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- copy channel -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="12dp"
+                    android:background="#cccccc" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#FFFFFF" />
+                <!-- ############top version########### -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal" >
+
+                    <!-- 1 -->
+
+                    <LinearLayout
+                        android:id="@+id/today_data_linerlayout_4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/today_new_add_bg"
+                        android:orientation="vertical"
+                        tools:ignore="NestedWeights" >
+
+                        <LinearLayout
+                            android:id="@+id/today_data_linerlayout_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="2dp"
+                                android:paddingLeft="7dp"
+                                android:src="@drawable/home_icon_channel" />
+
+                            <TextView
+                                style="@style/dashboard_item_title"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="3dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/top10_channel"
+                                android:textSize="10sp"
+                                tools:ignore="SmallSp" />
+
+                            <TextView
+                                android:id="@+id/channel_num"
+                                style="@style/dashboard_item_title"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="2dp"
+                                android:paddingTop="5dp"
+                                android:textSize="10sp"
+                                tools:ignore="SmallSp,SelectableText" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/todaydata_piechart_channel"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="5dp" />
+                    </LinearLayout>
+                    <!-- 2 -->
+
+                    <LinearLayout
+                        android:id="@+id/today_data_linerlayout_5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/today_new_add_bg"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_gravity="center_vertical"
+                                android:paddingLeft="7dp"
+                                android:paddingTop="5dp"
+                                android:src="@drawable/home_icon_ver" />
+
+                            <TextView
+                                style="@style/dashboard_item_title"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="3dp"
+                                android:paddingTop="5dp"
+                                android:text="@string/top10_version"
+                                android:textSize="10sp"
+                                tools:ignore="SmallSp" />
+
+                            <TextView
+                                android:id="@+id/version_num"
+                                style="@style/dashboard_item_title"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="2dp"
+                                android:paddingTop="5dp"
+                                android:textSize="10sp"
+                                tools:ignore="SmallSp,SelectableText" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/todaydata_piechart_version"
+                            android:layout_width="fill_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="5dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- ############################# -->
+
+
+                <!-- durtion  time -->
+
+                <LinearLayout
+                    android:id="@+id/duration_time_linerlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/product_detail_item_bg"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="3.5"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/duration_time_linear"
+                                style="@style/dashboard_item_chart"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    style="@style/dashboard__item_icon"
+                                    android:layout_width="13dp"
+                                    android:layout_height="15dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:src="@drawable/time_icon" />
+
+                                <TextView
+                                    style="@style/dashboard_item_title"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="7dp"
+                                    android:text="@string/single_time_duration"
+                                    android:textSize="10sp"
+                                    tools:ignore="SmallSp" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="3dp"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingRight="10dp" >
+
+                                <TextView
+                                    android:id="@+id/duration_time"
+                                    style="@style/dashboard_item_number_yesterday"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:text="00:00:00"
+                                    android:textColor="#51bcbf"
+                                    android:textIsSelectable="false"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginTop="3dp"
+                                android:gravity="right"
+                                android:orientation="horizontal"
+                                android:paddingRight="10dp" >
+
+                                <TextView
+                                    style="@style/dashboard_item_number_yesterday"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:text="@string/average_time_duration"
+                                    android:textColor="@color/textColor"
+                                    android:textIsSelectable="false"
+                                    android:textSize="11sp"
+                                    tools:ignore="SmallSp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- remain_user event feedback -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#cccccc" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#FFFFFF" />
+
+                <LinearLayout
+                    android:id="@+id/remain_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="14dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <!-- 1 -->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/user_item_bg"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/remain_user_icon"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="18dp"
+                            android:text="@string/remain_user"
+                            android:textColor="@color/textColor" />
+                    </LinearLayout>
+                    <!-- 2 -->
+
+                    <LinearLayout
+                        android:id="@+id/event_count"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/user_item_bg"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="17dp"
+                            android:background="@drawable/event_icon"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="17dp"
+                            android:text="@string/event_count"
+                            android:textColor="@color/textColor" />
+                    </LinearLayout>
+                    <!-- 3 -->
+
+                    <LinearLayout
+                        android:id="@+id/feed_back"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/user_item_bg"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/feed_back_icon"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="18dp"
+                            android:text="@string/feed_back"
+                            android:textColor="@color/textColor" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="umeng_channel_wandoujia">wandoujia</string>
+    <string name="umeng_channel_googleplay">GooglePlay</string>
+    <string name="umeng_channel_umeng">umeng</string>
+    <string name="umeng_channel_umeng_thrift">umeng-thrift</string>
+    <string name="umeng_channel_internal_test">internal_test</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/todaydata_gesture"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- top -->
+
+    <TextView
+        android:id="@+id/settop_text"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_bar"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textIsSelectable="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/settop_lin_1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/applist_midle_back"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:text="@string/see_statistical_information"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+       android:background="@drawable/listview_divider" />
+
+    <TextView
+        android:id="@+id/settop_lin_2"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/applist_bottom_back"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dp"
+        android:singleLine="true"
+        android:text="@string/move_app_to_top"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_linnerlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#CED4D6"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- head -->
+
+	<!-- content -->
+    <LinearLayout
+        android:id="@+id/trend_list_long"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/addapplistview_1"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="#F0F0F0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/table_title_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/event"
+                    android:textColor="#9E9E9E"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="40dp" >
+                <TextView
+                    android:id="@+id/trend_single_listview_title"
+                    style="@style/table_title_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/event_message_num"
+                    android:textColor="#9E9E9E"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#CED4D6"
+            android:cacheColorHint="#00000000"
+            android:scrollingCache="false"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+
+</LinearLayout>

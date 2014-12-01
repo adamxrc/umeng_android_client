@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E4E5"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/content_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#DBE0E3"
+            android:textIsSelectable="false" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:padding="6dp"
+            android:background="#B8C1C9">          
+            <Button 
+                android:id="@+id/umeng_fb_send_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/umeng_fb_send_btn_bg"
+                android:layout_alignParentRight="true"
+                android:padding="6dp"
+                android:textColor="#FFFFFF"
+                android:text="@string/feedback_send"/>
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/umeng_fb_send_btn"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/umeng_fb_round_white_bg"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:hint="@string/please_input"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/content_l"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:id="@+id/feedback_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

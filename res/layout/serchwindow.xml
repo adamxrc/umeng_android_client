@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myproduct_liner_n"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeefef"
+        android:orientation="vertical" >
+
+        <!-- search -->
+
+        <LinearLayout
+            android:baselineAligned="false"
+            android:id="@+id/myproduct_gesture_chooice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/search_input"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+				<!--  
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/search" />
+                    -->
+
+                <com.umeng.android.widget.MyEditText
+                    android:id="@+id/search_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="35dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/searchbox_hint"
+                    android:textColor="#999999"
+                    android:textSize="15sp"
+                    android:lines="1" 
+                    android:maxLines="1"/>
+            </LinearLayout>
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/search_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="#00dddddd"
+                android:dividerHeight="0.01dp"
+                android:listSelector="#00000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

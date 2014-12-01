@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style parent="@android:style/Theme.Dialog" name="licenseDialog">  
+        <item name="android:windowTitleStyle">@style/licenseDialogTitle</item>  
+    </style>  
+    <style parent="@android:style/TextAppearance.DialogWindowTitle" name="licenseDialogTitle">  
+        <item name="android:gravity">center_horizontal</item>  
+    </style>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myproduct_liner_n"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DDDFE0"
+    android:orientation="vertical" >
+
+    <!-- search -->
+
+    <LinearLayout
+        android:id="@+id/myproduct_gesture_chooice"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/search_input"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.umeng.android.widget.MyEditText
+            android:id="@+id/search_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="35dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/searchbox_hint"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/myproduct_alldata_hideview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <com.umeng.android.widget.PullToRefreshListView
+        android:id="@+id/myproduct_listview_1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/product_radius_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="2dp"
+        android:listSelector="#00000000" />
+
+</LinearLayout>
